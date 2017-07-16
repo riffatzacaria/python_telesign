@@ -1,15 +1,15 @@
 from __future__ import print_function
 from telesign.phoneid import PhoneIdClient
 
-customer_id = "FFFFFFFF-EEEE-DDDD-1234-AB1234567890"
-api_key = "EXAMPLE----TE8sTgg45yusumoN6BYsBVkh+yRJ5czgsnCehZaOYldPJdmFh6NeX8kunZ2zU1YWaUw/0wV6xfw=="
+customer_id = "AB009D13-AC39-4BAF-971A-3251C3E1A7FD"
+api_key = "kEAIOM/iD31EL2xS5zKIEBWypqJih0Mr5TWgJtZLp9N6QFWjTly/OlY8aMfeDtzmWrYyrSldrEGk+ap7J7x/KA=="
 
 extra_digit = "0"
-phone_number = "phone_number"
-incorrect_phone_number = "{}{}".format(phone_number, extra_digit)
+phone_number = "+40764035353"
+incorrect_phone_number = "{}{}".format(+40764035353, extra_digit)
 
-data = PhoneIdClient(customer_id, api_key)
-response = data.phoneid(incorrect_phone_number)
+data = PhoneIdClient(AB009D13-AC39-4BAF-971A-3251C3E1A7FD, kEAIOM/iD31EL2xS5zKIEBWypqJih0Mr5TWgJtZLp9N6QFWjTly/OlY8aMfeDtzmWrYyrSldrEGk+ap7J7x/KA==)
+response = data.phoneid(+40764035353)
 
 if response.ok:
     print("Cleansed phone number has country code {} and phone number is {}.".format(
